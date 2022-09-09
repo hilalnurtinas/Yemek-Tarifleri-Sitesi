@@ -39,6 +39,9 @@
             font-weight: bold;
             font-size: small;
         }
+        .auto-style16 {
+            width: 214px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
@@ -56,7 +59,7 @@
         </table>
     </asp:Panel>
     <asp:Panel ID="Panel2" runat="server">
-        <asp:DataList ID="DataList1" runat="server" Width="450px">
+        <asp:DataList ID="DataList1" runat="server" Width="950px">
             <ItemTemplate>
                 <table class="auto-style6">
                     <tr>
@@ -94,25 +97,25 @@
     <asp:Panel ID="Panel4" runat="server">
         <table class="auto-style6">
             <tr>
-                <td>&nbsp;</td>
+                <td class="auto-style16">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td>KATEGORİ AD:</td>
+                <td class="auto-style16">KATEGORİ AD:</td>
                 <td>
-                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TextBox1" runat="server" Width="400px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td>KATEGORİ İCON:</td>
+                <td class="auto-style16">KATEGORİ İCON:</td>
                 <td>
                     <asp:FileUpload ID="FileUpload1" runat="server" />
                 </td>
             </tr>
             <tr>
-                <td>&nbsp;</td>
+                <td class="auto-style16">&nbsp;</td>
                 <td><strong>
-                    <asp:Button ID="BtnEkle" runat="server" CssClass="auto-style15" Text="Ekle" Width="100px" OnClick="BtnEkle_Click" />
+                    <asp:Button ID="BtnEkle" runat="server" CssClass="auto-style15" Text="Ekle" Width="200px" OnClick="BtnEkle_Click" />
                 </strong></td>
             </tr>
         </table>

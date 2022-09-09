@@ -27,13 +27,25 @@
         .auto-style11 {
             height: 27px;
         }
+    .auto-style12 {
+        height: 26px;
+        text-align: center;
+    }
+    .auto-style13 {
+        margin-bottom: 0px;
+    }
+    .auto-style14 {
+        width: 1050px;
+        height: auto;
+        margin-right: 151px;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
 
     <asp:DataList ID="DataList2" runat="server">
         <ItemTemplate>
-            <table class="auto-style5">
+            <table class="auto-style14">
                 <tr>
                     <td class="auto-style10">
                         <a href="YemekDetay.aspx?YemekId=<%# Eval("YemekId") %>">
@@ -56,11 +68,19 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td><span class="auto-style8"><strong>Yemek Tarifi:</strong></span>&nbsp;<asp:Label ID="Label5" runat="server" Text='<%# Eval("YemekTarif") %>'></asp:Label>
+                    <td><span class="auto-style8"><strong>Yemek Tarifi:</strong></span>&nbsp;<asp:Label ID="Label5" runat="server" Text='<%# Eval("YemekTarif") %>' CssClass="auto-style13"></asp:Label>
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style9"></td>
+                </tr>
+                <tr>
+                    <td class="auto-style12">
+                        <asp:Image ID="Image1" runat="server" Height="150px" ImageUrl='<%# Eval("YemekResim") %>' Width="350px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style9">&nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style9"><span class="auto-style8"><strong>Eklenme Tarihi:</strong></span>

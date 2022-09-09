@@ -11,17 +11,17 @@ namespace YemekTarifleriSitem
 {
 
 
-    public partial class WebForm5
+    public partial class YorumDetay
     {
 
         /// <summary>
-        /// TxtGonderen denetimi.
+        /// TxtAd denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik olarak oluşturulan alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtGonderen;
+        protected global::System.Web.UI.WebControls.TextBox TxtAd;
 
         /// <summary>
         /// TxtMail denetimi.
@@ -33,30 +33,30 @@ namespace YemekTarifleriSitem
         protected global::System.Web.UI.WebControls.TextBox TxtMail;
 
         /// <summary>
-        /// TxtBaslik denetimi.
+        /// TxtIcerik denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik olarak oluşturulan alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtBaslik;
+        protected global::System.Web.UI.WebControls.TextBox TxtIcerik;
 
         /// <summary>
-        /// TxtMesaj denetimi.
+        /// TxtYemek denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik olarak oluşturulan alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtMesaj;
+        protected global::System.Web.UI.WebControls.TextBox TxtYemek;
 
         /// <summary>
-        /// Button1 denetimi.
+        /// BtnOnayla denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik olarak oluşturulan alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button BtnOnayla;
     }
 }

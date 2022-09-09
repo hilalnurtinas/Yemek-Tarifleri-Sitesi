@@ -21,17 +21,51 @@
         .auto-style9 {
             background-color: #FFCCCC;
         }
-        .auto-style10 {
-            text-align: right;
-        }
         .auto-style11 {
             font-size: medium;
             font-weight: bold;
         }
+        .auto-style12 {
+            font-size: large;
+            color: #00CCFF;
+            height: auto;
+            width: 1300px;
+            margin-right: 150px;
+        }
+        .auto-style13 {
+            color: #00FFFF;
+            font-size: x-large;
+        }
+        .auto-style14 {
+            height: auto;
+            float: left;
+            width: 1050px;
+            color: #00FFFF;
+            text-align: center;
+            
+        }
+        .auto-style15 {
+            width: 150px;
+        }
+        .auto-style16 {
+            text-align: right;
+            width: 150px;
+        }
+        .auto-style17 {
+            width: 150px;
+            height: 26px;
+        }
+        .auto-style18 {
+            height: 26px;
+        }
+        .auto-style19 {
+            font-size: x-large;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-    <asp:Label ID="Label3" runat="server" CssClass="auto-style5" Text="Label" Font-Size="30pt"></asp:Label>
+    <asp:Label ID="Label3" runat="server" CssClass="auto-style12" Text="Label" Font-Size="30pt"></asp:Label>
+    <div class="auto-style3">
     <asp:DataList ID="DataList2" runat="server">
         <ItemTemplate>
             <table class="auto-style6">
@@ -50,40 +84,41 @@
             </table>
         </ItemTemplate>
     </asp:DataList>
+    </div>
     <br />
-    <div class="auto-style9">YORUM YAPMA PANELİ</div>
+    <div class="auto-style14"><span class="auto-style13">YORUM</span><span class="auto-style19"> YAPMA PANELİ</span></div>
     <asp:Panel ID="Panel1" runat="server">
         <table class="auto-style6">
             <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style17"></td>
+                <td class="auto-style18"></td>
             </tr>
             <tr>
-                <td class="auto-style10">Ad Soyad: </td>
+                <td class="auto-style16">Ad Soyad: </td>
                 <td>
-                    <asp:TextBox ID="TextBox1" runat="server" Height="20px" Width="200px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox1" runat="server" Height="20px" Width="800px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style10">Mail:</td>
+                <td class="auto-style16">Mail:</td>
                 <td>
-                    <asp:TextBox ID="TextBox2" runat="server" Height="20px" Width="200px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox2" runat="server" Height="20px" Width="800px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style10">Yorum:</td>
+                <td class="auto-style16">Yorum:</td>
                 <td>
-                    <asp:TextBox ID="TextBox3" runat="server" Height="100px" TextMode="MultiLine" Width="200px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox3" runat="server" Height="100px" TextMode="MultiLine" Width="800px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td>&nbsp;</td>
+                <td class="auto-style15">&nbsp;</td>
                 <td><strong>
-                    <asp:Button ID="Button1" runat="server" CssClass="auto-style11" OnClick="Button1_Click" Text="Yorum Yap" Width="200px" />
+                    <asp:Button ID="Button1" runat="server" CssClass="auto-style11" OnClick="Button1_Click" Text="Yorum Yap" Width="800px" />
                     </strong></td>
             </tr>
             <tr>
-                <td>&nbsp;</td>
+                <td class="auto-style15">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
         </table>

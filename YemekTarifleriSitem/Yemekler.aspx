@@ -79,7 +79,7 @@
         </table>
     </asp:Panel>
     <asp:Panel ID="Panel2" runat="server">
-        <asp:DataList ID="DataList1" runat="server" Width="450px">
+        <asp:DataList ID="DataList1" runat="server" Width="950px">
             <ItemTemplate>
                 <table class="auto-style6">
                     <tr>
@@ -123,38 +123,38 @@
             <tr>
                 <td class="auto-style18">YEMEK AD:</td>
                 <td class="auto-style17">
-                    <asp:TextBox ID="TextBox1" runat="server" Width="275px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox1" runat="server" Width="800px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style22">MALZEMELER:</td>
                 <td>
-                    <asp:TextBox ID="TextBox2" runat="server" Height="150px" TextMode="MultiLine" Width="275px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox2" runat="server" Height="150px" TextMode="MultiLine" Width="800px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style22">YEMEK TARİF:</td>
                 <td>
-                    <asp:TextBox ID="TextBox3" runat="server" Height="200px" TextMode="MultiLine" Width="275px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox3" runat="server" Height="200px" TextMode="MultiLine" Width="800px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style22">YEMEK RESİM:</td>
                 <td>
-                    <asp:FileUpload ID="FileUpload1" runat="server" />
+                    <asp:FileUpload ID="FileUpload1" runat="server" Width="800px" />
                 </td>
             </tr>
             <tr>
                 <td class="auto-style22">KATEGORİLER:</td>
                 <td>
-                    <asp:DropDownList ID="DropDownList1" runat="server" Width="275px">
+                    <asp:DropDownList ID="DropDownList1" runat="server" Width="800px">
                     </asp:DropDownList>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style5"><strong>
-                    <asp:Button ID="BtnEkle" runat="server" CssClass="auto-style15" Text="Ekle" Width="100px" OnClick="BtnEkle_Click" />
+                    <asp:Button ID="BtnEkle" runat="server" CssClass="auto-style15" Text="Ekle" Width="300px" OnClick="BtnEkle_Click" />
                     </strong></td>
             </tr>
             <tr>

@@ -46,13 +46,30 @@ namespace YemekTarifleriSitem
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            SqlCommand komut = new SqlCommand("Update Tbl_Yemekler set YemekAd=@p1, YemekMalzeme=@p2, YemekTarif=@p3, KategoriId=@p4 Where YemekId=@p5",bgl.baglanti());
+            FileUpload1.SaveAs(Server.MapPath("/images/" + FileUpload1.FileName));
+
+            SqlCommand komut = new SqlCommand("Update Tbl_Yemekler set YemekAd=@p1, YemekMalzeme=@p2, YemekTarif=@p3, KategoriId=@p4, YemekResim=@p5 Where YemekId=@p6",bgl.baglanti());
             komut.Parameters.AddWithValue("@p1", TextBox1.Text);
             komut.Parameters.AddWithValue("@p2", TextBox2.Text);
             komut.Parameters.AddWithValue("@p3", TextBox3.Text);
             komut.Parameters.AddWithValue("@p4", DropDownList1.SelectedValue);
-            komut.Parameters.AddWithValue("@p5", id);
+            komut.Parameters.AddWithValue("@p5", "~/images/" + FileUpload1.FileName);
+            komut.Parameters.AddWithValue("@p6", id);
             komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            //tüm yemeklerin durumunu false yapma
+            SqlCommand komut = new SqlCommand("Update Tbl_Yemekler set GununYemegi = 0", bgl.baglanti());
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+
+            //gunun yemegi için id ye göre durumu true yapmak
+            SqlCommand komut2 = new SqlCommand("Update Tbl_Yemekler Set GununYemegi=1 Where YemekId=@p1", bgl.baglanti());
+            komut2.Parameters.AddWithValue("@p1", id);
+            komut2.ExecuteNonQuery();
             bgl.baglanti().Close();
         }
     }

@@ -17,17 +17,22 @@
         .auto-style7 {
             text-align: left;
         }
+        .auto-style8 {
+            height: auto;
+            float: left;
+            width: 1050px;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div style="margin-left: 300px; height: 150px; width: 700px; background-color: #ce7171;">
-            <asp:Image ID="Image1" runat="server" Height="150px" ImageUrl="~/Banner Foto/login.jpeg" Width="700px" />
+        <div style="margin-left: 150px; height: 150px; width: 1300px; background-color: #ce7171;">
+            <asp:Image ID="Image1" runat="server" Height="150px" ImageUrl="~/Banner Foto/login.jpeg" Width="1300px" />
         </div>
-        <div style="margin-left: 300px; height: 20px; width: 700px;">
+        <div style="margin-left: 150px; height: 20px; width: 700px;">
             &nbsp;<br />
         </div>
-        <div style="margin-left: 300px; height: auto; width: 700px;">
+        <div style="margin-left: 150px; height: auto; width: 1300px;">
             <div style="height: auto; float: left; width: 200px; background-color: #5e9fee; margin-left:0px;">
                 
                 <div class="auto-style5">
@@ -48,22 +53,22 @@
                             <td class="auto-style7" style="border: thin solid #FFFFFF;"><a href="Yorumlar.aspx">YORUMLAR</a></td>
                         </tr>
                         <tr>
-                            <td class="auto-style7" style="border: thin solid #FFFFFF;">MESAJLAR</td>
+                            <td class="auto-style7" style="border: thin solid #FFFFFF;"><a href="Mesajlar.aspx">MESAJLAR</a></td>
                         </tr>
                         <tr>
-                            <td class="auto-style7" style="border: thin solid #FFFFFF;">GÜNÜN YEMEĞİ</td>
+                            <td class="auto-style7" style="border: thin solid #FFFFFF;"><a href="GununYemegiAdmin.aspx">GÜNÜN YEMEĞİ</a></td>
                         </tr>
                         <tr>
-                            <td class="auto-style7" style="border: thin solid #FFFFFF;">ÖNERİLER</td>
+                            <td class="auto-style7" style="border: thin solid #FFFFFF;"><a href="Tarifler.aspx">TARİFLER</a></td>
                         </tr>
                         <tr>
-                            <td class="auto-style7" style="border: thin solid #FFFFFF;">HAKKIMIZDA</td>
+                            <td class="auto-style7" style="border: thin solid #FFFFFF;"><a href="HakkimizdaAdmin.aspx">HAKKIMIZDA</a></td>
                         </tr>
                     </table>
                 </div>
                 
             </div>
-            <div style="height: auto; float: left; width: 450px; background-color: #5e9fee; margin-left: 50px;">
+            <div style="background-color: #5e9fee; margin-left: 50px;" class="auto-style8">
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server" />
             </div>
         </div>
